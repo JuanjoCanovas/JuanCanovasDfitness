@@ -7,34 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./image/favicon.png">
     <title>DFitness Portal de Noticias Fitness</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="containerIndex fondoVerdeMedio">
-    <header>
-        <img src="./image/logof.png" alt="Logo D Fitness portal de noticias fitness" class="logoHeader">
-        <h1>DFITNESS</h1>
-        <div class="imagenesHeader">
-            <img src="./image/Zoom-icon.png" alt="Buscar en el sitio de Fitness" class="imagenHeader">
-            <a href="./pages/registracion.html"><img src="./image/usuario.png" alt="Icono para ir a registrarse"
-                    class="imagenHeader"></a>
-        </div>
-    </header>
-    <!-- Final del Header-->
-    <nav>
-        <ul>
-            <li><a href="./pages/articulos.html">Articulos</a></li>
-            <li><a href="./pages/noticias.html">Noticias</a></li>
-            <li><a href="./pages/tienda.html">Tienda</a>
-                <ul>
-                    <li><a href="./pages/tienda.html#indumentaria" class="submenu">Indumentaria</a></li>
-                    <li><a href="./pages/tienda.html#suplementos" class="submenu">Suplementos</a></li>
-                    <li><a href="./pages/tienda.html#maquinas" class="submenu">Maquinarias</a></li>
-                    <li><a href="./pages/tienda.html#equipamientos" class="submenu">Equipamiento</a></li>
+    <nav class="navbar navbar-expand-md bg-light fondoDegrade">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./image/logof.png" alt="Logo D Fitness Index portal de noticias fitness" class="logoHeader">
+                <p class="centrado">DFITNESS</p>
+            </a>
+            <!-- boton hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- boton hamburguesa -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./pages/articulos.html">ARTICULOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/noticias.html">NOTICIAS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./pages/tienda.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TIENDA
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./pages/tienda.html#indumentaria">INDUMENTARIA</a></li>
+                            <li><a class="dropdown-item" href="./pages/tienda.html#maquinas">MAQUINAS</a></li>
+                            <li><a class="dropdown-item" href="./pages/tienda.html#suplementos">SUPLEMENTOS</a></li>
+                            <li><a class="dropdown-item" href="./pages/tienda.html#equipamientos">EQUIPAMIENTOS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/registracion.html">REGISTRO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                    </li>
                 </ul>
-            </li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+                </form>
+            </div>
+        </div>
     </nav>
     <!-- Final del menu-->
     <main>
@@ -95,22 +119,22 @@
                     <figcaption class="parrafoProducto">Caminador Eliptico</figcaption>
                     <p class="parrafoProducto"> $ 68000 </p>
                 </figure>
-                <figure class="productosTiendaFiguras transform"> 
+                <figure class="productosTiendaFiguras transform">
                     <img src="./image/mancuernas1.jpg" alt="mancuernas" class="imagenProductoTienda">
                     <figcaption class="parrafoProducto">Mancuernas</figcaption>
                     <p class="parrafoProducto"> $ 7000 </p>
                 </figure>
                 <figure class="productosTiendaFiguras transform">
-                <img src="./image/proteinas1.jpeg" alt="Proteinas" class="imagenProductoTienda">
-                <figcaption class="parrafoProducto">Proteinas de Suero</figcaption>
-                <p class="parrafoProducto"> $ 5800 </p>
+                    <img src="./image/proteinas1.jpeg" alt="Proteinas" class="imagenProductoTienda">
+                    <figcaption class="parrafoProducto">Proteinas de Suero</figcaption>
+                    <p class="parrafoProducto"> $ 5800 </p>
                 </figure>
             </article>
             <article class="productosTienda">
                 <figure class="productosTiendaFiguras transform">
-                <img src="./image/soga1.jpg" alt="soga" class="imagenProductoTienda">
-                <figcaption class="parrafoProducto">Soga para Saltar</figcaption>
-                <p class="parrafoProducto"> $ 3700 </p>
+                    <img src="./image/soga1.jpg" alt="soga" class="imagenProductoTienda">
+                    <figcaption class="parrafoProducto">Soga para Saltar</figcaption>
+                    <p class="parrafoProducto"> $ 3700 </p>
                 </figure>
                 <figure class="productosTiendaFiguras transform">
                     <img src="./image/remera.jpeg" alt="remera hombre" class="imagenProductoTienda">
@@ -137,6 +161,10 @@
         </section>
     </footer>
     <!-- Final del footer-->
+    <!-- JavaScript bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 

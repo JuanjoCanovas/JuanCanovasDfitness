@@ -40,6 +40,11 @@ header {
     align-items: center;
 }
 
+.fondoDegrade {
+    background-color: rgb(207, 240, 158);
+    background: radial-gradient(circle, rgba(207, 240, 158, 1) 35%, rgba(168, 219, 168, 1) 100%);
+}
+
 nav {
     background-color: rgb(168, 219, 168);
     padding: auto;
@@ -49,24 +54,26 @@ nav {
 nav ul {
     list-style: none;
     text-align: center;
+    margin-right: 15vw;
 }
 
 nav ul li {
     display: inline-block;
     margin-right: 3vw;
+    font-size: 2.8vh;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
-    font-size: 2.5vh;
     font-weight: 500;
+    font-size: 2.3vh;
     transition: all o.4s linear;
     border-radius: 1vh;
 }
 
 nav ul li a:hover {
-    background-color: rgb(2, 102, 92);
+    background-color: rgb(168, 219, 168);
+    font-size: 3vh;
 }
 
 nav ul ul {
@@ -76,19 +83,30 @@ nav ul ul {
 
 nav ul ul li {
     display: block;
+    background-color: rgb(207, 240, 158, );
 }
 
 nav ul li:hover ul {
     display: block;
-    background-color: rgb(207, 240, 158);
     padding: .5vh;
+    font-size: 2vh;
+    background-color: rgb(207, 240, 158, );
+}
+
+.dropdown-item {
+    font-size: 1.8vh;
 }
 
 .imagenesHeader {
-    height: 4vh;
+    height: 3vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.centrado {
+    text-align: center;
+    font-size: 2vw;
 }
 
 .imagenHeader {
@@ -114,7 +132,7 @@ nav ul li:hover ul {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 90vw;
+    width: 95vw;
 }
 
 .contenedorArticuloMedio {
@@ -148,73 +166,155 @@ nav ul li:hover ul {
 }
 
 
-.scale:hover{
-	transform:scale(3);
-	cursor: pointer;
-	transition: transform 2s;
+.scale:hover {
+    transform: scale(3);
+    cursor: pointer;
+    transition: transform 2s;
 }
 
 
 
-.transform:hover{
-	transform: translate(-2vh, -2vh);
-	cursor: pointer;
-	transition: transform 1s;
+.transform:hover {
+    transform: translate(-2vh, -2vh);
+    cursor: pointer;
+    transition: transform 1s;
 }
 
-.novedad{
+.novedad {
     color: aquamarine;
     font-size: 1.8vh;
 }
 
 
-.transition:hover{
-	cursor: pointer;
-	background-color: rgb(168, 219, 168);
-	width: 8vw;
+.transition:hover {
+    cursor: pointer;
+    background-color: rgb(168, 219, 168);
+    width: 8vw;
     color: black;
-	border: solid .1vw black;
-	transition: all 1s;
+    border: solid .1vw black;
+    transition: all 1s;
 }
 
 
-@keyframes novedadNoticia{
-	0%{font-size: 1.8vh; color: blue;}
-    5%{font-size: 1.9vh; color: cyan;}
-    10%{font-size: 2vh; color: aquamarine;}
-    15%{font-size: 2.1vh; color: green;}
-    20%{font-size: 2.2vh; color: yellowgreen;}
-    25%{font-size: 2.3vh; color: greenyellow;}
-    30%{font-size: 2.4vh; color: yellow;}
-    35%{font-size: 2.5vh; color: navajowhite;}
-    40%{font-size: 2.6vh; color: orange;}
-    45%{font-size: 2.7vh; color: red;}
-    50%{font-size: 2.8vh; color: palevioletred;}
-    55%{font-size: 2.7vh; color: red;}
-    60%{font-size: 2.6vh; color: orange;}
-    65%{font-size: 2.5vh; color: navajowhite;}
-    70%{font-size: 2.4vh; color: yellow;}
-    75%{font-size: 2.3vh; color: greenyellow;}
-    80%{font-size: 2.2vh; color: yellowgreen;}
-    85%{font-size: 2.1vh; color: green;}
-    90%{font-size: 2vh; color: aquamarine;}
-    95%{font-size: 1.9vh; color: cyan;}
-    100%{font-size: 1.8vh; color: blue;}
+@keyframes novedadNoticia {
+    0% {
+        font-size: 1.8vh;
+        color: blue;
+    }
+
+    5% {
+        font-size: 1.9vh;
+        color: cyan;
+    }
+
+    10% {
+        font-size: 2vh;
+        color: aquamarine;
+    }
+
+    15% {
+        font-size: 2.1vh;
+        color: green;
+    }
+
+    20% {
+        font-size: 2.2vh;
+        color: yellowgreen;
+    }
+
+    25% {
+        font-size: 2.3vh;
+        color: greenyellow;
+    }
+
+    30% {
+        font-size: 2.4vh;
+        color: yellow;
+    }
+
+    35% {
+        font-size: 2.5vh;
+        color: navajowhite;
+    }
+
+    40% {
+        font-size: 2.6vh;
+        color: orange;
+    }
+
+    45% {
+        font-size: 2.7vh;
+        color: red;
+    }
+
+    50% {
+        font-size: 2.8vh;
+        color: palevioletred;
+    }
+
+    55% {
+        font-size: 2.7vh;
+        color: red;
+    }
+
+    60% {
+        font-size: 2.6vh;
+        color: orange;
+    }
+
+    65% {
+        font-size: 2.5vh;
+        color: navajowhite;
+    }
+
+    70% {
+        font-size: 2.4vh;
+        color: yellow;
+    }
+
+    75% {
+        font-size: 2.3vh;
+        color: greenyellow;
+    }
+
+    80% {
+        font-size: 2.2vh;
+        color: yellowgreen;
+    }
+
+    85% {
+        font-size: 2.1vh;
+        color: green;
+    }
+
+    90% {
+        font-size: 2vh;
+        color: aquamarine;
+    }
+
+    95% {
+        font-size: 1.9vh;
+        color: cyan;
+    }
+
+    100% {
+        font-size: 1.8vh;
+        color: blue;
+    }
 }
 
-.animate{
-	animation-name: novedadNoticia;
-	animation-iteration-count: infinite;
-	animation-timing-function:linear;
-	animation-delay: 1s;
-	animation-duration: 5s;
+.animate {
+    animation-name: novedadNoticia;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-duration: 5s;
 }
 
 
 .parrafoArticulo {
     font-size: 2vh;
     text-align: justify;
-    margin: 1vh;
 }
 
 .parrafoArticuloCentro {
@@ -257,7 +357,7 @@ nav ul li:hover ul {
     width: 90vw;
 }
 
-.parrafoNoticiasPage{
+.parrafoNoticiasPage {
     font-size: 1.1vw;
     text-align: justify;
     margin: 1vh 1vh;
@@ -269,8 +369,18 @@ nav ul li:hover ul {
     margin: 1vh;
 }
 
+.linkNoticia {
+    color: rgb(2, 102, 92);
+    font-size: 2.5vh;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
 .parrafoNoticias {
-    font-size: 1.8vh;
+    font-size: 1.6vh;
     text-align: justify;
     margin: 1vh;
     margin: 1vh 100vh;
@@ -292,7 +402,7 @@ nav ul li:hover ul {
     width: 95vw;
 }
 
-.noticiaPage{
+.noticiaPage {
     background-color: rgb(11, 72, 107);
     text-align: center;
     color: white;
@@ -584,7 +694,7 @@ footer {
 
     .parrafoArticulo {
         font-size: 2.1vh;
-        width: 55vw;
+        width: 50vw;
     }
 
     .imagenArticulo {
@@ -632,7 +742,7 @@ footer {
 
 
     .parrafoArticulo {
-        width: 90vw;
+        width: 88vw;
         font-size: 2vh;
         margin: 1vh;
     }
@@ -718,7 +828,7 @@ footer {
 
     .parrafoArticulo {
         font-size: 1.35vw;
-        width: 65vw;
+        width: 62vw;
         margin: 1vw 1vw 1vw 3vw;
     }
 
